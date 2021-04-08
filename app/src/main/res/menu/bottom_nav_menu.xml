@@ -8,15 +8,16 @@
 
     <item
         android:id="@+id/navigation_city"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_map_marked_alt_solid"
         android:title="@string/title_city" />
 
     <item
         android:id="@+id/navigation_symptoms"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_heartbeat"
         android:title="@string/title_symptoms" />
     <item
         android:id="@+id/navigation_hotline"
+        android:icon="@drawable/ic_phone"
         android:title="@string/title_hotline" />
 
 </menu>
