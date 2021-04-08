@@ -17,6 +17,8 @@ public class NavBar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         BottomNavigationView navView = findViewById(R.id.nav_view);
+        getSupportActionBar().hide(); // hide title bar
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
