@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COVID19Tracker">
         <activity
-            android:name=".Navigation"
+            android:name=".NavBar"
             android:label="@string/title_activity_navigation"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
