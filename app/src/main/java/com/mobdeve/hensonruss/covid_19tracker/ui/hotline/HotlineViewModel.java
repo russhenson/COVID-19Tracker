@@ -10,7 +10,7 @@ public class HotlineViewModel extends ViewModel{
 
     public HotlineViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is hotline fragment");
+        mText.setValue("COVID-19 Hotline");
     }
 
     public LiveData<String> getText() {

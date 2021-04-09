@@ -10,7 +10,7 @@ public class CityViewModel extends ViewModel {
 
     public CityViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is city fragment");
+        mText.setValue("City / Region Cases");
     }
 
     public LiveData<String> getText() {

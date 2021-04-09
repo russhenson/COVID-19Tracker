@@ -10,7 +10,7 @@ public class SymptomsViewModel extends ViewModel {
 
     public SymptomsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is symptoms fragment");
+        mText.setValue("Symptoms");
     }
 
     public LiveData<String> getText() {
