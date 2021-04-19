@@ -31,11 +31,12 @@
 
     <TextView
         android:id="@+id/text_hotline"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/helvetica_bold"
         android:includeFontPadding="false"
+        android:text="COVID-19 Hotline"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
