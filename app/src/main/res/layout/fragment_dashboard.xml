@@ -78,6 +78,20 @@
                     app:layout_constraintStart_toStartOf="@+id/activeCasesView"
                     app:layout_constraintTop_toTopOf="@+id/activeCasesView" />
 
+                <TextView
+                    android:id="@+id/activeNumTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="99,999,999"
+                    android:textAllCaps="true"
+                    android:textColor="#74C3FF"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="@+id/activeCasesView"
+                    app:layout_constraintStart_toStartOf="@+id/activeCasesView"
+                    app:layout_constraintTop_toBottomOf="@+id/activeTv" />
+
                 <View
                     android:id="@+id/confirmedCasesView"
                     android:layout_width="175dp"
@@ -104,6 +118,20 @@
                     app:layout_constraintStart_toStartOf="@+id/confirmedCasesView"
                     app:layout_constraintTop_toTopOf="@+id/confirmedCasesView" />
 
+                <TextView
+                    android:id="@+id/confirmedNumTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="99,999,999"
+                    android:textAllCaps="true"
+                    android:textColor="#FF7474"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="@+id/confirmedCasesView"
+                    app:layout_constraintStart_toStartOf="@+id/confirmedCasesView"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmedTv" />
+
                 <View
                     android:id="@+id/recoveredCasesView"
                     android:layout_width="175dp"
@@ -128,6 +156,20 @@
                     app:layout_constraintEnd_toEndOf="@+id/recoveredCasesView"
                     app:layout_constraintStart_toStartOf="@+id/recoveredCasesView"
                     app:layout_constraintTop_toTopOf="@+id/recoveredCasesView" />
+
+                <TextView
+                    android:id="@+id/recoveredNumTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="99,999,999"
+                    android:textAllCaps="true"
+                    android:textColor="#18CF8B"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="@+id/recoveredCasesView"
+                    app:layout_constraintStart_toStartOf="@+id/recoveredCasesView"
+                    app:layout_constraintTop_toBottomOf="@+id/recoveredTv" />
 
 
                 <View
@@ -154,6 +196,20 @@
                     app:layout_constraintEnd_toEndOf="@+id/deceasedCasesView"
                     app:layout_constraintStart_toStartOf="@+id/deceasedCasesView"
                     app:layout_constraintTop_toTopOf="@+id/deceasedCasesView" />
+
+                <TextView
+                    android:id="@+id/deceasedNumTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="99,999,999"
+                    android:textAllCaps="true"
+                    android:textColor="#A7A7A7"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="@+id/deceasedCasesView"
+                    app:layout_constraintStart_toStartOf="@+id/deceasedCasesView"
+                    app:layout_constraintTop_toBottomOf="@+id/deceasedTv" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
