@@ -21,7 +21,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="150dp">
 
             <TextView
                 android:id="@+id/phTv"
@@ -161,7 +162,7 @@
                 android:id="@+id/topRegionsTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="18dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/helvetica_bold"
                 android:text="Top regions"
@@ -173,10 +174,151 @@
                 android:id="@+id/totalCasesTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
                 android:text="Total Cases"
-                android:layout_marginLeft="20dp"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/topRegionsView"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topRegionsView1"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topRegionsView2"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topRegionsView3"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topRegionsView4"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/topCitiesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="Top cities"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalCasesTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="Total Cases"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/topCitiesView"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topCitiesVie1"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topCitiesView2"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topCitiesView3"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/topCitiesView4"
+                android:layout_width="375dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/fill_curved_border_small"
+                android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
         </LinearLayout>
     </ScrollView>
 
