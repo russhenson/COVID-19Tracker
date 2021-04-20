@@ -52,7 +52,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/helvetica"
         android:text="Open to all callers nationwide:"
         android:textAllCaps="true"
@@ -106,7 +106,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/helvetica"
         android:text="For PLDT, Smart, Sun, TNT Subscribers:"
         android:textAllCaps="true"
@@ -147,12 +147,12 @@
     <View
         android:id="@+id/advisoryView"
         android:layout_width="350dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/fill_curved_border"
         android:foregroundGravity="top|clip_horizontal|clip_vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hotlineView1" />
 
