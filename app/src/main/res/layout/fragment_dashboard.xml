@@ -41,22 +41,10 @@
                 android:layout_marginTop="10dp">
 
                 <View
-                    android:id="@+id/activeCasesShadow"
-                    android:layout_width="175dp"
-                    android:layout_height="125dp"
-                    android:layout_marginEnd="18dp"
-                    android:background="@drawable/fill_curved_border_shadow"
-                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                    app:layout_constraintBottom_toTopOf="@+id/deceasedCasesView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.173" />
-
-                <View
                     android:id="@+id/activeCasesView"
                     android:layout_width="175dp"
                     android:layout_height="125dp"
-                    android:layout_marginEnd="18dp"
+                    android:layout_marginEnd="22dp"
                     android:background="@drawable/fill_curved_border"
                     android:foregroundGravity="top|clip_horizontal|clip_vertical"
                     app:layout_constraintBottom_toTopOf="@+id/deceasedCasesView"
@@ -96,7 +84,7 @@
                     android:id="@+id/confirmedCasesView"
                     android:layout_width="175dp"
                     android:layout_height="125dp"
-                    android:layout_marginStart="18dp"
+                    android:layout_marginStart="22dp"
                     android:background="@drawable/fill_curved_border"
                     android:foregroundGravity="top|clip_horizontal|clip_vertical"
                     app:layout_constraintBottom_toTopOf="@+id/recoveredCasesView"
@@ -136,8 +124,8 @@
                     android:id="@+id/recoveredCasesView"
                     android:layout_width="175dp"
                     android:layout_height="125dp"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/fill_curved_border"
                     android:foregroundGravity="top|clip_horizontal|clip_vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -176,8 +164,8 @@
                     android:id="@+id/deceasedCasesView"
                     android:layout_width="175dp"
                     android:layout_height="125dp"
-                    android:layout_marginRight="18dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/fill_curved_border"
                     android:foregroundGravity="top|clip_horizontal|clip_vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -217,7 +205,7 @@
                 android:id="@+id/topRegionsTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="22dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/helvetica_bold"
                 android:text="Top regions"
@@ -229,76 +217,241 @@
                 android:id="@+id/totalCasesTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="22dp"
                 android:text="Total Cases"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
-            <View
-                android:id="@+id/topRegionsView"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
 
-            <View
-                android:id="@+id/topRegionsView1"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topRegionsCl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <View
-                android:id="@+id/topRegionsView2"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <View
+                    android:id="@+id/topRegionsView"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/topRegionsView3"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <View
+                    android:id="@+id/topRegionsView1"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topRegionsView" />
 
-            <View
-                android:id="@+id/topRegionsView4"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <View
+                    android:id="@+id/topRegionsView2"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topRegionsView1" />
+
+                <View
+                    android:id="@+id/topRegionsView3"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topRegionsView2" />
+
+                <View
+                    android:id="@+id/topRegionsView4"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topRegionsView3" />
+
+                <TextView
+                    android:id="@+id/topRegionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top Region 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top Region 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView1"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView1"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top Region 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView2"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView2"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top Region 4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView3"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView3"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView3"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionTv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top Region 5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView4"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView4"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView4"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionCasesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionCasesTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView1"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView1"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView1"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionCasesTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView2"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView2"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionCasesTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView3"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView3"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView3"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView3"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topRegionCasesTv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topRegionsView4"
+                    app:layout_constraintEnd_toEndOf="@+id/topRegionsView4"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topRegionsView4"
+                    app:layout_constraintTop_toTopOf="@+id/topRegionsView4"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/topCitiesTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="22dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/helvetica_bold"
                 android:text="Top cities"
@@ -310,70 +463,238 @@
                 android:id="@+id/totalCasesTv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="22dp"
                 android:text="Total Cases"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
-            <View
-                android:id="@+id/topCitiesView"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
 
-            <View
-                android:id="@+id/topCitiesVie1"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topCitiesCl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <View
-                android:id="@+id/topCitiesView2"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <View
+                    android:id="@+id/topCitiesView"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/topCitiesView3"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <View
+                    android:id="@+id/topCitiesView1"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topCitiesView" />
 
-            <View
-                android:id="@+id/topCitiesView4"
-                android:layout_width="375dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/fill_curved_border_small"
-                android:foregroundGravity="top|clip_horizontal|clip_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <View
+                    android:id="@+id/topCitiesView2"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topCitiesView1" />
+
+                <View
+                    android:id="@+id/topCitiesView3"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topCitiesView2" />
+
+                <View
+                    android:id="@+id/topCitiesView4"
+                    android:layout_width="367dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/fill_curved_border_small"
+                    android:foregroundGravity="top|clip_horizontal|clip_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topCitiesView3" />
+
+                <TextView
+                    android:id="@+id/topCityTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top City 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top City 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView1"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView1"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top City 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView2"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView2"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top City 4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView3"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView3"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView3"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityTv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Top City 5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView4"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView4"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView4"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityCasesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityCasesTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView1"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView1"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView1"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityCasesTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView2"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView2"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityCasesTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView3"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView3"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView3"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView3"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/topCityCasesTv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="999,9999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/topCitiesView4"
+                    app:layout_constraintEnd_toEndOf="@+id/topCitiesView4"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/topCitiesView4"
+                    app:layout_constraintTop_toTopOf="@+id/topCitiesView4"
+                    app:layout_constraintVertical_bias="0.5" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
         </LinearLayout>
     </ScrollView>
 

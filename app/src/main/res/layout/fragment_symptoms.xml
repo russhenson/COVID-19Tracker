@@ -33,7 +33,7 @@
 
                 <View
                     android:id="@+id/symptomsNoteView"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="90dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/fill_curved_border"
@@ -44,7 +44,7 @@
 
                 <TextView
                     android:id="@+id/symptomsNoteTv"
-                    android:layout_width="325dp"
+                    android:layout_width="320dp"
                     android:layout_height="50dp"
                     android:fontFamily="@font/helvetica"
                     android:text="COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization."
@@ -59,12 +59,12 @@
                     android:id="@+id/ssTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
+                    android:layout_marginLeft="22dp"
                     android:layout_marginTop="26dp"
-                    android:fontFamily="@font/helvetica"
+                    android:fontFamily="@font/helvetica_bold"
                     android:text="Serious symptoms:"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
 
                 <View
                     android:id="@+id/ssView"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -81,9 +81,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/ssTv" />
 
+                <TextView
+                    android:id="@+id/ssTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Serious Symptom 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ssView"
+                    app:layout_constraintEnd_toEndOf="@+id/ssView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/ssView"
+                    app:layout_constraintTop_toTopOf="@+id/ssView"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/ssView1"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -92,9 +108,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/ssView" />
 
+                <TextView
+                    android:id="@+id/ssTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Serious Symptom 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ssView1"
+                    app:layout_constraintEnd_toEndOf="@+id/ssView1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/ssView1"
+                    app:layout_constraintTop_toTopOf="@+id/ssView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/ssView2"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -104,15 +136,31 @@
                     app:layout_constraintTop_toBottomOf="@+id/ssView1" />
 
                 <TextView
+                    android:id="@+id/ssTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Serious Symptom 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ssView2"
+                    app:layout_constraintEnd_toEndOf="@+id/ssView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/ssView2"
+                    app:layout_constraintTop_toTopOf="@+id/ssView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
                     android:id="@+id/mcsTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
+                    android:layout_marginLeft="22dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/helvetica"
+                    android:fontFamily="@font/helvetica_bold"
                     android:text="Most common symptoms:"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +168,7 @@
 
                 <View
                     android:id="@+id/mcsView"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -129,9 +177,26 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/mcsTv" />
 
+                <TextView
+                    android:id="@+id/mcsTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Most Common Symptom 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mcsView"
+                    app:layout_constraintEnd_toEndOf="@+id/mcsView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mcsView"
+                    app:layout_constraintTop_toTopOf="@+id/mcsView"
+                    app:layout_constraintVertical_bias="0.5" />
+
+
                 <View
                     android:id="@+id/mcsView1"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -140,9 +205,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/mcsView" />
 
+                <TextView
+                    android:id="@+id/mcsTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Most Common Symptom 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mcsView1"
+                    app:layout_constraintEnd_toEndOf="@+id/mcsView1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mcsView1"
+                    app:layout_constraintTop_toTopOf="@+id/mcsView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/mcsView2"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -152,15 +233,31 @@
                     app:layout_constraintTop_toBottomOf="@+id/mcsView1" />
 
                 <TextView
+                    android:id="@+id/mcsTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Most Common Symptom 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mcsView2"
+                    app:layout_constraintEnd_toEndOf="@+id/mcsView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mcsView2"
+                    app:layout_constraintTop_toTopOf="@+id/mcsView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
                     android:id="@+id/lcsTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
+                    android:layout_marginLeft="22dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="@font/helvetica"
+                    android:fontFamily="@font/helvetica_bold"
                     android:text="Less common symptoms:"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -168,7 +265,7 @@
 
                 <View
                     android:id="@+id/lcsView"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -177,9 +274,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsTv" />
 
+                <TextView
+                    android:id="@+id/lcsTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/lcsView1"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -188,9 +301,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsView" />
 
+                <TextView
+                    android:id="@+id/lcsTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView1"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView1"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView1"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/lcsView2"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -199,9 +328,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsView1" />
 
+                <TextView
+                    android:id="@+id/lcsTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView2"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView2"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView2"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/lcsView3"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -210,9 +355,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsView2" />
 
+                <TextView
+                    android:id="@+id/lcsTv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView3"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView3"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView3"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/lcsView4"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -221,9 +382,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsView3" />
 
+                <TextView
+                    android:id="@+id/lcsTv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView4"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView4"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView4"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/lcsView5"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -232,9 +409,25 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsView4" />
 
+                <TextView
+                    android:id="@+id/lcsTv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 6"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView5"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView5"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView5"
+                    app:layout_constraintVertical_bias="0.5" />
+
                 <View
                     android:id="@+id/lcsView6"
-                    android:layout_width="375dp"
+                    android:layout_width="367dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/fill_curved_border_small"
@@ -242,6 +435,22 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/lcsView5" />
+
+                <TextView
+                    android:id="@+id/lcsTv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:fontFamily="@font/helvetica"
+                    android:text="Least Common Symptom 7"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lcsView6"
+                    app:layout_constraintEnd_toEndOf="@+id/lcsView6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/lcsView6"
+                    app:layout_constraintTop_toTopOf="@+id/lcsView6"
+                    app:layout_constraintVertical_bias="0.5" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -65,7 +65,7 @@
 
     <View
         android:id="@+id/hotlineView"
-        android:layout_width="375dp"
+        android:layout_width="367dp"
         android:layout_height="70dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/fill_curved_border"
@@ -147,7 +147,7 @@
 
     <View
         android:id="@+id/advisoryView"
-        android:layout_width="375dp"
+        android:layout_width="367dp"
         android:layout_height="200dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/fill_curved_border"
