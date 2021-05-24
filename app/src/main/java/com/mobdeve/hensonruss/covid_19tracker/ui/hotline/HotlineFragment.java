@@ -53,6 +53,7 @@ public class HotlineFragment extends Fragment {
         hotlineNumTv1 = root.findViewById(R.id.hotlineNumTv1);
         hotlineNumTv2 = root.findViewById(R.id.hotlineNumTv2);
 
+        // Retrieves data from firebase then set text to the textviews
         loadAdvisory();
         loadMainHotline();
         loadCompleteHotline();
