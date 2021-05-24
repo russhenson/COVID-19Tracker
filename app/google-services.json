@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003050179529",
+    "project_id": "covid-19-tracker-a021f",
+    "storage_bucket": "covid-19-tracker-a021f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003050179529:android:5fcd379a1489d63b236618",
+        "android_client_info": {
+          "package_name": "com.mobdeve.hensonruss.covid_19tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003050179529-e8d8i2b322d7q027geu6dco92k17279v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA85dbbbrlZg_ziyjL9ClQkfSQhLK_PN5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003050179529-e8d8i2b322d7q027geu6dco92k17279v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
