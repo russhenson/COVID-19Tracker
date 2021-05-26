@@ -114,12 +114,12 @@ public class HotlineFragment extends Fragment {
                     if (document.exists()) {
                         String number = document.get("number").toString();
                         hotlineNumTv1.setText(number);
-                        Log.d("HOTLINE ADVISORY", "DocumentSnapshot data: " + number);
+                        Log.d("HOTLINE", "DocumentSnapshot data: " + number);
                     } else {
-                        Log.d("HOTLINE ADVISORY", "No such document");
+                        Log.d("HOTLINE", "No such document");
                     }
                 } else {
-                    Log.d("HOTLINE ADVISORY", "get failed with ", task.getException());
+                    Log.d("HOTLINE", "get failed with ", task.getException());
                 }
             }
         });
@@ -134,12 +134,12 @@ public class HotlineFragment extends Fragment {
                     if (document.exists()) {
                         String number = document.get("number").toString();
                         hotlineNumTv2.setText(number);
-                        Log.d("HOTLINE ADVISORY", "DocumentSnapshot data: " + number);
+                        Log.d("HOTLINE", "DocumentSnapshot data: " + number);
                     } else {
-                        Log.d("HOTLINE ADVISORY", "No such document");
+                        Log.d("HOTLINE", "No such document");
                     }
                 } else {
-                    Log.d("HOTLINE ADVISORY", "get failed with ", task.getException());
+                    Log.d("HOTLINE", "get failed with ", task.getException());
                 }
             }
         });
