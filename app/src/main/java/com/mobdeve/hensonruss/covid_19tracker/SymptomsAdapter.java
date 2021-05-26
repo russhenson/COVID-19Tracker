@@ -40,11 +40,11 @@ public class SymptomsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if(viewType == typeOne){
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.symptoms_title, parent);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.symptoms_title, parent, false);
             return new ViewHolderSymptomTitle(view);
         }
         else if(viewType == typeTwo){
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.symptoms_list_layout, parent);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.symptoms_list_layout, parent, false);
             return new ViewHolderSymptom(view);
         }
         else
@@ -88,7 +88,7 @@ public class SymptomsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         public ViewHolderSymptom(@NonNull View itemView) {
             super(itemView);
 
-            this.symptomTv = itemView.findViewById(R.id.symptomTitleTv);
+            this.symptomTv = itemView.findViewById(R.id.symptomTv);
         }
     }
 

@@ -34,7 +34,7 @@ public class SymptomsFragment extends Fragment {
     private SymptomsAdapter symptomsAdapter;
     private RecyclerView.LayoutManager manager;
 
-    private ArrayList<SymptomItem> symptomItems = new ArrayList<SymptomItem>();
+    private ArrayList<SymptomItem> symptomItems;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -61,7 +61,7 @@ public class SymptomsFragment extends Fragment {
         symptomsRv.setLayoutManager(manager);
 
         this.symptomsAdapter = new SymptomsAdapter(symptomItems);
-        this.symptomsRv.setAdapter(symptomsAdapter);
+        this.symptomsRv.setAdapter(this.symptomsAdapter);
 
         return root;
     }
@@ -88,6 +88,7 @@ public class SymptomsFragment extends Fragment {
     }
 
     public void loadSymptomsItems(){
+        symptomItems = new ArrayList<>();
         DocumentReference docRef = db.collection("symptoms").document("symptoms list");
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -105,7 +106,7 @@ public class SymptomsFragment extends Fragment {
                         SymptomItem item3 = new SymptomItem(document.get("mcs3").toString(), SymptomItem.ItemType.typeTwo);
                         symptomItems.add(item3);
 
-
+                        symptomsAdapter.notifyDataSetChanged();
 
                         Log.d("SYMPTOMS NOTE", "DocumentSnapshot data: " + document.getData());
                     } else {
