@@ -89,6 +89,7 @@ public class SymptomsFragment extends Fragment {
 
     public void loadSymptomsItems(){
         symptomItems = new ArrayList<>();
+        ArrayList<String> keys = new ArrayList<>();
         DocumentReference docRef = db.collection("symptoms").document("symptoms list");
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -97,23 +98,46 @@ public class SymptomsFragment extends Fragment {
                     DocumentSnapshot document = task.getResult();
                     if (document.exists()) {
 
-                        SymptomItem item = new SymptomItem(document.get("mcs title").toString(), SymptomItem.ItemType.typeOne);
-                        symptomItems.add(item);
-                        SymptomItem item1 = new SymptomItem(document.get("mcs1").toString(), SymptomItem.ItemType.typeTwo);
-                        symptomItems.add(item1);
-                        SymptomItem item2 = new SymptomItem(document.get("mcs2").toString(), SymptomItem.ItemType.typeTwo);
-                        symptomItems.add(item2);
-                        SymptomItem item3 = new SymptomItem(document.get("mcs3").toString(), SymptomItem.ItemType.typeTwo);
-                        symptomItems.add(item3);
+                        keys.add("mcs title");
+                        keys.add("mcs1");
+                        keys.add("mcs2");
+                        keys.add("mcs3");
+                        keys.add("ss title");
+                        keys.add("ss1");
+                        keys.add("ss2");
+                        keys.add("ss3");
+                        keys.add("lcs title");
+                        keys.add("lcs1");
+                        keys.add("lcs2");
+                        keys.add("lcs3");
+                        keys.add("lcs4");
+                        keys.add("lcs5");
+                        keys.add("lcs6");
+                        keys.add("lcs7");
+
+                        for (int i = 0; i < document.getData().size(); i++){
+
+                            String key = keys.get(i);
+                            String content = document.get(keys.get(i)).toString();
+                            SymptomItem item;
+
+                            if (key.contains("title")) {
+                                item = new SymptomItem(content, SymptomItem.ItemType.typeOne);
+                            }
+                            else
+                                item = new SymptomItem(content, SymptomItem.ItemType.typeTwo);
+
+                            symptomItems.add(item);
+                        }
 
                         symptomsAdapter.notifyDataSetChanged();
 
-                        Log.d("SYMPTOMS NOTE", "DocumentSnapshot data: " + document.getData());
+                        Log.d("SYMPTOMS LIST", "DocumentSnapshot data: " + document.getData());
                     } else {
-                        Log.d("SYMPTOMS NOTE", "No such document");
+                        Log.d("SYMPTOMS LIST", "No such document");
                     }
                 } else {
-                    Log.d("SYMPTOMS NOTE", "get failed with ", task.getException());
+                    Log.d("SYMPTOMS LIST", "get failed with ", task.getException());
                 }
             }
         });
