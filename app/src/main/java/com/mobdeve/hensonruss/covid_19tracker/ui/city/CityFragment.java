@@ -30,6 +30,10 @@ public class CityFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+
+        //add the search
+
         return root;
     }
 }
