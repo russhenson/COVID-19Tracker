@@ -33,8 +33,8 @@ public class DashboardFragment extends Fragment {
 
     private TextView confirmedNumTv, activeNumTv, recoveredNumTv, deceasedNumTv;
 
-    private TextView topRegionTv, topRegionTv1, topRegionTv2, topRegionTv3, topRegionTv4;
-    private TextView topRegionCasesTv, topRegionCasesTv1, topRegionCasesTv2, topRegionCasesTv3, topRegionCasesTv4;
+    private TextView topRegionTv, topRegionTv1, topRegionTv2, topRegionTv3, topRegionTv4, topRegionTv5, topRegionTv6, topRegionTv7, topRegionTv8, topRegionTv9;
+    private TextView topRegionCasesTv, topRegionCasesTv1, topRegionCasesTv2, topRegionCasesTv3, topRegionCasesTv4, topRegionCasesTv5, topRegionCasesTv6, topRegionCasesTv7, topRegionCasesTv8, topRegionCasesTv9;
 
     private Retrofit retrofit;
     private CovidAPIPhilippinesRegions covidAPIPhilippinesRegions;
@@ -81,12 +81,22 @@ public class DashboardFragment extends Fragment {
         this.topRegionTv2 = root.findViewById(R.id.topRegionTv2);
         this.topRegionTv3 = root.findViewById(R.id.topRegionTv3);
         this.topRegionTv4 = root.findViewById(R.id.topRegionTv4);
+        this.topRegionTv5 = root.findViewById(R.id.topRegionTv5);
+        this.topRegionTv6 = root.findViewById(R.id.topRegionTv6);
+        this.topRegionTv7 = root.findViewById(R.id.topRegionTv7);
+        this.topRegionTv8 = root.findViewById(R.id.topRegionTv8);
+        this.topRegionTv9 = root.findViewById(R.id.topRegionTv9);
 
         this.topRegionCasesTv = root.findViewById(R.id.topRegionCasesTv);
         this.topRegionCasesTv1 = root.findViewById(R.id.topRegionCasesTv1);
         this.topRegionCasesTv2 = root.findViewById(R.id.topRegionCasesTv2);
         this.topRegionCasesTv3 = root.findViewById(R.id.topRegionCasesTv3);
         this.topRegionCasesTv4 = root.findViewById(R.id.topRegionCasesTv4);
+        this.topRegionCasesTv5 = root.findViewById(R.id.topRegionCasesTv5);
+        this.topRegionCasesTv6 = root.findViewById(R.id.topRegionCasesTv6);
+        this.topRegionCasesTv7 = root.findViewById(R.id.topRegionCasesTv7);
+        this.topRegionCasesTv8 = root.findViewById(R.id.topRegionCasesTv8);
+        this.topRegionCasesTv9 = root.findViewById(R.id.topRegionCasesTv9);
     }
 
     private void getTopRegions(){
@@ -111,6 +121,17 @@ public class DashboardFragment extends Fragment {
                 topRegionCasesTv3.setText(addComma(posts.getRegionData(3).getCases()));
                 topRegionTv4.setText(posts.getRegionData(4).getRegion().toUpperCase());
                 topRegionCasesTv4.setText(addComma(posts.getRegionData(4).getCases()));
+
+                topRegionTv5.setText(posts.getRegionData(5).getRegion().toUpperCase());
+                topRegionCasesTv5.setText(addComma(posts.getRegionData(5).getCases()));
+                topRegionTv6.setText(posts.getRegionData(6).getRegion().toUpperCase());
+                topRegionCasesTv6.setText(addComma(posts.getRegionData(6).getCases()));
+                topRegionTv7.setText(posts.getRegionData(7).getRegion().toUpperCase());
+                topRegionCasesTv7.setText(addComma(posts.getRegionData(7).getCases()));
+                topRegionTv8.setText(posts.getRegionData(8).getRegion().toUpperCase());
+                topRegionCasesTv8.setText(addComma(posts.getRegionData(8).getCases()));
+                topRegionTv9.setText(posts.getRegionData(9).getRegion().toUpperCase());
+                topRegionCasesTv9.setText(addComma(posts.getRegionData(9).getCases()));
             }
 
             @Override

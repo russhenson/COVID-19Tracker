@@ -7,4 +7,7 @@ public interface CovidAPIPhilippinesSummary {
 
     @GET("summary")
     Call<DataSummary> getDataSummary();
+
+    @GET("summary?region=ncr")
+    Call<DataSummary> getNCRSummary();
 }
