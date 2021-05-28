@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<SymptomItem> symptomItems;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+    private Intent i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this, NavBar.class);
+                i = new Intent(MainActivity.this, NavBar.class);
                 startActivity(i);
                 finish();
             }
