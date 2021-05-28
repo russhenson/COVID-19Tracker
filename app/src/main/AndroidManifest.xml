@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mobdeve.hensonruss.covid_19tracker">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="aandroid.permission.INTERNET" />
+
     <application
         android:name=".Firebasedata"
         android:allowBackup="true"
