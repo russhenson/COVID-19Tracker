@@ -22,3 +22,6 @@ What we changed from our proposal:
   number of cases, but not the cities in the country. With this, we removed the top 5 cities and replace it with top 10
   regions. We also removed the city locator and replaced it with NCR statistics.
 
+
+Our COVID-19 Web API is from Simperfy.
+https://github.com/Simperfy/Covid-19-API-Philippines-DOH
